@@ -1,10 +1,10 @@
-package Acme::CPANLists::Import::SHARYANTO;
+package Acme::CPANLists::Import::RSAVAGE;
 
 # DATE
 # VERSION
 
 1;
-# ABSTRACT: CPANLists imported from Steven Haryanto's blog posts
+# ABSTRACT: CPANLists imported from Ron Savage's blog posts
 
 =head1 DESCRIPTION
 
