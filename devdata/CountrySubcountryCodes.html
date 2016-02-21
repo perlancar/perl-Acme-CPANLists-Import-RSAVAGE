@@ -1,0 +1,852 @@
+<html>
+<head>
+<title>Perl Modules for Country Data</title>
+<link rel="stylesheet" type="text/css" href="/assets/css/benchmark/featureset/localecountry/default.css">
+<link rel="stylesheet" type="text/css" href="/assets/css/benchmark/featureset/localecountry/fancy.table.css">
+</head>
+<body>
+
+<h3 class="global_toc_text">Purpose</h3>
+
+<p align="center">To cross-check a personal selection of modules which offer:</p>
+
+<h3 align="center">About</h3>
+<table align="center" cellspacing="0" cellpadding="0">
+<tr>
+<!-- Left -->
+<td>
+<div class="even_left">
+Country names
+</div>
+</td>
+<!-- Right -->
+<td>
+<div class="even_right">
+2 and 3 letter country codes
+</div>
+</td>
+</tr>
+<tr>
+<!-- Left -->
+<td>
+<div class="odd_left">
+SubCountry names
+</div>
+</td>
+<!-- Right -->
+<td>
+<div class="odd_right">
+(Divisions, Provinces, States, Territories)
+</div>
+</td>
+</tr>
+<tr>
+<!-- Left -->
+<td>
+<div class="last_even_left">
+Currency details
+</div>
+</td>
+<!-- Right -->
+<td>
+<div class="last_even_right">
+Language details
+</div>
+</td>
+</tr>
+</table>
+
+<p align="center">Note: Only modules offering world-wide data have been considered, so modules such as Locale::BR are ignored.</p>
+
+<p align="center">I've just released <a href="http://search.cpan.org/perldoc?Business::Cart::Generic">Business::Cart::Generic</a>,
+which contains country and subcountry data gleaned from osCommerce. My plan is to replace this latter data with one of the modules assessed below.</p>
+<hr />
+
+<h3 class="global_toc_text">Modules</h3>
+
+<table align="center" border = "1" summary = "Names">
+<tr>
+<td>Module</td>
+<td>Version</td>
+<td>Last update</td>
+</tr>
+<tr>
+<td><a href="http://search.cpan.org/perldoc?Locale::Codes">Locale::Codes</a></td>
+<td>3.21</td>
+<td>2011-03-01</td>
+</tr>
+<tr>
+<td><a href="http://search.cpan.org/perldoc?Locale::Country::Multilingual">Locale::Country::Multilingual</a></td>
+<td>0.23</td>
+<td>2009-04-15</td>
+</tr>
+<tr>
+<td><a href="http://search.cpan.org/perldoc?Locale::Geocode">Locale::Geocode</a></td>
+<td>1.2</td>
+<td>2009-02-10</td>
+</tr>
+<tr>
+<td><a href="http://search.cpan.org/perldoc?Locale::Object">Locale::Object</a></td>
+<td>0.78</td>
+<td>2007-10-25</td>
+</tr>
+<tr>
+<td><a href="http://search.cpan.org/perldoc?Locale::SubCountry">Locale::SubCountry</a></td>
+<td>1.50</td>
+<td>2011-04-06</td>
+</tr>
+<tr>
+<td><a href="http://search.cpan.org/perldoc?WWW::Scraper::Wikipedia::ISO3166">WWW::Scraper::Wikipedia::ISO3166</a></td>
+<td>1.01</td>
+<td>2012-05-16</td>
+</tr>
+</table>
+
+
+<hr />
+
+<h3 class="global_toc_text">Country names</h3>
+
+<h3 align="center">About</h3>
+<table align="center" cellspacing="0" cellpadding="0">
+<tr>
+<!-- Left -->
+<td>
+<div class="even_left">
+Module
+</div>
+</td>
+<!-- Right -->
+<td>
+<div class="even_right">
+# of countries
+</div>
+</td>
+</tr>
+<tr>
+<!-- Left -->
+<td>
+<div class="odd_left">
+Locale::Codes
+</div>
+</td>
+<!-- Right -->
+<td>
+<div class="odd_right">
+249
+</div>
+</td>
+</tr>
+<tr>
+<!-- Left -->
+<td>
+<div class="even_left">
+Locale::Country::Multilingual
+</div>
+</td>
+<!-- Right -->
+<td>
+<div class="even_right">
+246
+</div>
+</td>
+</tr>
+<tr>
+<!-- Left -->
+<td>
+<div class="odd_left">
+Locale::Geocode
+</div>
+</td>
+<!-- Right -->
+<td>
+<div class="odd_right">
+0
+</div>
+</td>
+</tr>
+<tr>
+<!-- Left -->
+<td>
+<div class="even_left">
+Locale::Object
+</div>
+</td>
+<!-- Right -->
+<td>
+<div class="even_right">
+0
+</div>
+</td>
+</tr>
+<tr>
+<!-- Left -->
+<td>
+<div class="odd_left">
+Locale::SubCountry
+</div>
+</td>
+<!-- Right -->
+<td>
+<div class="odd_right">
+245
+</div>
+</td>
+</tr>
+<tr>
+<!-- Left -->
+<td>
+<div class="last_even_left">
+WWW::Scraper::Wikipedia::ISO3166
+</div>
+</td>
+<!-- Right -->
+<td>
+<div class="last_even_right">
+249
+</div>
+</td>
+</tr>
+</table>
+
+<p align="center">Note: The number of countries modules have in common (if any) is 207, going by names of countries.</p>
+
+<p align="center">Where the count is 0, this means the module design is so poor its not worth trying to figure out how to obtain the information.</p>
+
+<hr />
+
+<h3 class="global_toc_text">Country name mismatches</h3>
+
+<table align="center" border = "1" summary = "Names">
+<tr>
+<td>Locale::Codes</td>
+<td>Locale::Country::Multilingual</td>
+<td>Locale::SubCountry</td>
+<td>WWW::Scraper::Wikipedia::ISO3166</td>
+</tr>
+<tr>
+<td>Aland Islands</td>
+<td>Aland Islands</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>-</td>
+<td>-</td>
+<td>Antigua And Barbuda</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Antigua and Barbuda</td>
+<td>Antigua and Barbuda</td>
+<td>-</td>
+<td>Antigua and Barbuda</td>
+</tr>
+<tr>
+<td>-</td>
+<td>Bolivia</td>
+<td>Bolivia</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Bolivia, Plurinational State of</td>
+<td>-</td>
+<td>-</td>
+<td>Bolivia, Plurinational State of</td>
+</tr>
+<tr>
+<td>Bonaire, Saint Eustatius and Saba</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>Bonaire, Sint Eustatius and Saba</td>
+</tr>
+<tr>
+<td>-</td>
+<td>-</td>
+<td>Bosnia And Herzegovina</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Bosnia and Herzegovina</td>
+<td>Bosnia and Herzegovina</td>
+<td>-</td>
+<td>Bosnia and Herzegovina</td>
+</tr>
+<tr>
+<td>Congo</td>
+<td>Congo</td>
+<td>-</td>
+<td>Congo</td>
+</tr>
+<tr>
+<td>-</td>
+<td>-</td>
+<td>Congo (Brazzaville)</td>
+<td>-</td>
+</tr>
+<tr>
+<td>-</td>
+<td>-</td>
+<td>Congo (Kinshasa)</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Congo, The Democratic Republic of the</td>
+<td>Congo, The Democratic Republic of the</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>Congo, the Democratic Republic of the</td>
+</tr>
+<tr>
+<td>-</td>
+<td>Cote D&#39;Ivoire</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Cote d&#39;Ivoire</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Curacao</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>Curaçao</td>
+</tr>
+<tr>
+<td>-</td>
+<td>-</td>
+<td>Côte D&#39;Ivoire</td>
+<td>-</td>
+</tr>
+<tr>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>Côte d&#39;Ivoire</td>
+</tr>
+<tr>
+<td>French Polynesia</td>
+<td>French Polynesia</td>
+<td>-</td>
+<td>French Polynesia</td>
+</tr>
+<tr>
+<td>Greenland</td>
+<td>Greenland</td>
+<td>-</td>
+<td>Greenland</td>
+</tr>
+<tr>
+<td>-</td>
+<td>-</td>
+<td>Greenland/Groenland</td>
+<td>-</td>
+</tr>
+<tr>
+<td>-</td>
+<td>-</td>
+<td>Guinea Bissau</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Guinea-Bissau</td>
+<td>Guinea-Bissau</td>
+<td>-</td>
+<td>Guinea-Bissau</td>
+</tr>
+<tr>
+<td>-</td>
+<td>-</td>
+<td>Heard Island And McDonald Islands</td>
+<td>-</td>
+</tr>
+<tr>
+<td>-</td>
+<td>Heard Island and McDonald Islands</td>
+<td>-</td>
+<td>Heard Island and McDonald Islands</td>
+</tr>
+<tr>
+<td>Heard Island and Mcdonald Islands</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>-</td>
+<td>-</td>
+<td>Iran (Islamic Republic Of)</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Iran, Islamic Republic of</td>
+<td>Iran, Islamic Republic of</td>
+<td>-</td>
+<td>Iran, Islamic Republic of</td>
+</tr>
+<tr>
+<td>-</td>
+<td>-</td>
+<td>Korea, Democratic People&#39;s Republic Of</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Korea, Democratic People&#39;s Republic of</td>
+<td>Korea, Democratic People&#39;s Republic of</td>
+<td>-</td>
+<td>Korea, Democratic People&#39;s Republic of</td>
+</tr>
+<tr>
+<td>-</td>
+<td>-</td>
+<td>Korea, Republic Of</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Korea, Republic of</td>
+<td>Korea, Republic of</td>
+<td>-</td>
+<td>Korea, Republic of</td>
+</tr>
+<tr>
+<td>Libya</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>-</td>
+<td>Libyan Arab Jamahiriya</td>
+<td>Libyan Arab Jamahiriya</td>
+<td>Libyan Arab Jamahiriya</td>
+</tr>
+<tr>
+<td>-</td>
+<td>Macedonia</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>-</td>
+<td>-</td>
+<td>Macedonia, The Former Yugoslav Republic Of</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Macedonia, The Former Yugoslav Republic of</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>Macedonia, the former Yugoslav Republic of</td>
+</tr>
+<tr>
+<td>-</td>
+<td>-</td>
+<td>Micronesia (Federated States Of)</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Micronesia, Federated States of</td>
+<td>Micronesia, Federated States of</td>
+<td>-</td>
+<td>Micronesia, Federated States of</td>
+</tr>
+<tr>
+<td>Moldova, Republic of</td>
+<td>Moldova, Republic of</td>
+<td>-</td>
+<td>Moldova, Republic of</td>
+</tr>
+<tr>
+<td>-</td>
+<td>-</td>
+<td>Moldova, Repuplic Of</td>
+<td>-</td>
+</tr>
+<tr>
+<td>-</td>
+<td>Netherlands Antilles</td>
+<td>Netherlands Antilles</td>
+<td>-</td>
+</tr>
+<tr>
+<td>-</td>
+<td>-</td>
+<td>Palestinian Territory</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Palestinian Territory, Occupied</td>
+<td>Palestinian Territory, Occupied</td>
+<td>-</td>
+<td>Palestinian Territory, Occupied</td>
+</tr>
+<tr>
+<td>Reunion</td>
+<td>Reunion</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>-</td>
+<td>-</td>
+<td>Russia</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Russian Federation</td>
+<td>Russian Federation</td>
+<td>-</td>
+<td>Russian Federation</td>
+</tr>
+<tr>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>Réunion</td>
+</tr>
+<tr>
+<td>Saint Barthelemy</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>-</td>
+<td>-</td>
+<td>Saint Barthélemy</td>
+<td>Saint Barthélemy</td>
+</tr>
+<tr>
+<td>-</td>
+<td>Saint Helena</td>
+<td>Saint Helena</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Saint Helena, Ascension and Tristan da Cunha</td>
+<td>-</td>
+<td>-</td>
+<td>Saint Helena, Ascension and Tristan da Cunha</td>
+</tr>
+<tr>
+<td>-</td>
+<td>-</td>
+<td>Saint Kitts And Nevis</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Saint Kitts and Nevis</td>
+<td>Saint Kitts and Nevis</td>
+<td>-</td>
+<td>Saint Kitts and Nevis</td>
+</tr>
+<tr>
+<td>-</td>
+<td>-</td>
+<td>Saint Martin</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Saint Martin (French part)</td>
+<td>-</td>
+<td>-</td>
+<td>Saint Martin (French part)</td>
+</tr>
+<tr>
+<td>-</td>
+<td>-</td>
+<td>Saint Pierre And Miquelon</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Saint Pierre and Miquelon</td>
+<td>Saint Pierre and Miquelon</td>
+<td>-</td>
+<td>Saint Pierre and Miquelon</td>
+</tr>
+<tr>
+<td>-</td>
+<td>-</td>
+<td>Saint Vincent And The Grenadines</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Saint Vincent and the Grenadines</td>
+<td>Saint Vincent and the Grenadines</td>
+<td>-</td>
+<td>Saint Vincent and the Grenadines</td>
+</tr>
+<tr>
+<td>-</td>
+<td>Saint-Barthélemy</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>-</td>
+<td>Saint-Martin (French part)</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>-</td>
+<td>-</td>
+<td>Sao Tome And Principe</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Sao Tome and Principe</td>
+<td>Sao Tome and Principe</td>
+<td>-</td>
+<td>Sao Tome and Principe</td>
+</tr>
+<tr>
+<td>Serbia</td>
+<td>Serbia</td>
+<td>-</td>
+<td>Serbia</td>
+</tr>
+<tr>
+<td>-</td>
+<td>-</td>
+<td>Serbia </td>
+<td>-</td>
+</tr>
+<tr>
+<td>-</td>
+<td>-</td>
+<td>Sint Maarten</td>
+<td>Sint Maarten</td>
+</tr>
+<tr>
+<td>Sint Maarten (Dutch part)</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>-</td>
+<td>-</td>
+<td>South Georgia And The South Sandwich Islands</td>
+<td>-</td>
+</tr>
+<tr>
+<td>South Georgia and the South Sandwich Islands</td>
+<td>South Georgia and the South Sandwich Islands</td>
+<td>-</td>
+<td>South Georgia and the South Sandwich Islands</td>
+</tr>
+<tr>
+<td>South Sudan</td>
+<td>-</td>
+<td>South Sudan</td>
+<td>South Sudan</td>
+</tr>
+<tr>
+<td>-</td>
+<td>-</td>
+<td>Svalbard And Jan Mayen</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Svalbard and Jan Mayen</td>
+<td>Svalbard and Jan Mayen</td>
+<td>-</td>
+<td>Svalbard and Jan Mayen</td>
+</tr>
+<tr>
+<td>-</td>
+<td>-</td>
+<td>Taiwan, Province Of China</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Taiwan, Province of China</td>
+<td>Taiwan, Province of China</td>
+<td>-</td>
+<td>Taiwan, Province of China</td>
+</tr>
+<tr>
+<td>-</td>
+<td>-</td>
+<td>Tanzania, United Republic Of</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Tanzania, United Republic of</td>
+<td>Tanzania, United Republic of</td>
+<td>-</td>
+<td>Tanzania, United Republic of</td>
+</tr>
+<tr>
+<td>-</td>
+<td>-</td>
+<td>Trinidad And Tobago</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Trinidad and Tobago</td>
+<td>Trinidad and Tobago</td>
+<td>-</td>
+<td>Trinidad and Tobago</td>
+</tr>
+<tr>
+<td>-</td>
+<td>-</td>
+<td>Turks And Caicos Islands</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Turks and Caicos Islands</td>
+<td>Turks and Caicos Islands</td>
+<td>-</td>
+<td>Turks and Caicos Islands</td>
+</tr>
+<tr>
+<td>-</td>
+<td>Venezuela</td>
+<td>Venezuela</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Venezuela, Bolivarian Republic of</td>
+<td>-</td>
+<td>-</td>
+<td>Venezuela, Bolivarian Republic of</td>
+</tr>
+<tr>
+<td>Viet Nam</td>
+<td>-</td>
+<td>Viet Nam</td>
+<td>Viet Nam</td>
+</tr>
+<tr>
+<td>-</td>
+<td>Vietnam</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>-</td>
+<td>-</td>
+<td>Wallis And Futuna</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Wallis and Futuna</td>
+<td>Wallis and Futuna</td>
+<td>-</td>
+<td>Wallis and Futuna</td>
+</tr>
+<tr>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>Åland Islands</td>
+</tr>
+</table>
+
+
+<hr />
+
+<h3 class="global_toc_text">Division name mismatches</h3>
+
+<table align="center" border = "1" summary = "Names">
+</table>
+
+
+<p align="center">Note: None detected.</p>
+<hr />
+
+<h3 class="global_toc_text">Environment</h3>
+
+<h3 align="center">About</h3>
+<table align="center" cellspacing="0" cellpadding="0">
+<tr>
+<!-- Left -->
+<td>
+<div class="even_left">
+Author
+</div>
+</td>
+<!-- Right -->
+<td>
+<div class="even_right">
+<a href="http://savage.net.au/">Ron Savage</a>
+</div>
+</td>
+</tr>
+<tr>
+<!-- Left -->
+<td>
+<div class="odd_left">
+Date
+</div>
+</td>
+<!-- Right -->
+<td>
+<div class="odd_right">
+2012-05-17
+</div>
+</td>
+</tr>
+<tr>
+<!-- Left -->
+<td>
+<div class="even_left">
+OS
+</div>
+</td>
+<!-- Right -->
+<td>
+<div class="even_right">
+Debian V 6.0.1
+</div>
+</td>
+</tr>
+<tr>
+<!-- Left -->
+<td>
+<div class="last_odd_left">
+Perl
+</div>
+</td>
+<!-- Right -->
+<td>
+<div class="last_odd_right">
+V 5.12.2
+</div>
+</td>
+</tr>
+</table>
+
+<hr />
+
+</body>
+</html>

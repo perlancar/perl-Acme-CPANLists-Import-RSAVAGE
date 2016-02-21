@@ -1,0 +1,52 @@
+#!/usr/bin/env perl
+
+use 5.010;
+use strict;
+use warnings;
+use FindBin '$Bin';
+
+use App::CreateAcmeCPANListsImportModules;
+use Perinci::Sub::Util qw(gen_curried_sub);
+use Perinci::CmdLine::Any;
+
+gen_curried_sub(
+    'App::CreateAcmeCPANListsImportModules::create_acme_cpanlists_import_modules',
+    {
+        modules => [
+            {
+                name => 'StopWordLists',
+                url => 'http://savage.net.au/Perl-modules/html/stopwordlists.report.html',
+                summary => 'CPAN modules which offer stopword lists (2015)',
+            },
+            {
+                name => 'ClassesRolesWithMooAndMoos',
+                url => 'http://savage.net.au/Module-reviews/html/gci.2012.url.mapper.modules.html',
+                summary => 'Classes and Roles with Moo and Moos (2012)',
+            },
+            {
+                name => 'ArrayAndSetOperations',
+                url => 'http://savage.net.au/Perl-modules/html/setops.report.html',
+                summary => 'CPAN modules which offer array and set operations (2012)',
+            },
+            {
+                name => 'CountrySubcountryCodes',
+                url => 'http://savage.net.au/Perl-modules/html/locale.report.html',
+                summary => 'CPAN modules which offer country and sub-country codes (2012)',
+            },
+            {
+                name => 'XML_2006',
+                url => 'http://savage.net.au/Ron/html/XML-ramble.html',
+                extract_opts => {from_text=>1},
+                summary => 'CPAN modules for XML processing (2006)',
+            },
+        ],
+        namespace => 'Acme::CPANLists::Import::RSAVAGE',
+        dist_dir => "$Bin/..",
+    },
+    'app',
+);
+
+Perinci::CmdLine::Any->new(
+    url => '/main/app',
+    log => 1,
+)->run;
